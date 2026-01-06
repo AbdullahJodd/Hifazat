@@ -1,0 +1,54 @@
+name: hifazat
+description: "A women safety application."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.0
+  firebase_storage: ^12.3.0
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/pic1.jpg
+    - assets/images/hifazat.jpg
+
+# --------------------------------------------------
+# ANDROID / IOS SYSTEM SPLASH (NO IMAGE — NO CROP)
+# --------------------------------------------------
+flutter_native_splash:
+  color: "#FFFFFF"
+  android: true
+  ios: true
+
+  android_12:
+    color: "#FFFFFF"
+
+# --------------------------------------------------
+# APP ICON (USES YOUR IMAGE)
+# --------------------------------------------------
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/images/hifazat.jpg
