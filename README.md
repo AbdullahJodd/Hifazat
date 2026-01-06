@@ -1,16 +1,70 @@
-# hifazat
+# 🛡️ Hifazat – Your Safety Ally
 
-A new Flutter project.
+Hifazat is a **Flutter-based women safety mobile application** designed to provide quick emergency assistance, legal awareness, and access to essential contacts. The app focuses on **simplicity, reliability, and rapid response** in critical situations.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+### 🔐 Authentication
+- Email & password signup/login using Firebase Authentication
+- Secure user session handling
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🆘 SOS Emergency Button
+- Prominent SOS button with animated feedback
+- Logs SOS alerts to Firebase Firestore for backend monitoring
+- Designed for quick access during emergencies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ⚖️ Laws & Legal Awareness
+- Displays laws related to women and civilian rights in Pakistan
+- Data fetched dynamically from Firebase Firestore
+- Clean, readable UI with expandable sections
+
+### 📞 Emergency Contacts
+- Predefined emergency and women safety contacts
+- Expandable contact cards
+- Easily extendable via Firebase backend
+
+### 👤 User Profile
+- Displays user information (Name, Age, Gender, City)
+- Profile data stored securely in Firebase
+- Logout functionality
+
+### 🎨 UI & UX
+- Custom branded splash screen
+- Soft background themes related to safety & protection
+- Responsive layout across devices
+
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter (Dart)**
+- **Firebase**
+  - Authentication
+  - Cloud Firestore
+  - Storage
+- **Material 3 UI**
+- Android-first deployment
+
+---
+
+## 📦 Project Structure
+
+```text
+lib/
+├── screens/
+│   ├── splash/
+│   ├── auth/
+│   ├── sos/
+│   ├── laws/
+│   ├── contacts/
+│   └── profile/
+├── services/
+│   ├── auth_service.dart
+│   └── sos_service.dart
+├── widgets/
+├── utils/
+├── app.dart
+└── main.dart
+
